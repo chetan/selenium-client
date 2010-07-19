@@ -149,6 +149,10 @@ module Selenium
         remote_control_command "click", [locator,]
         wait_for options
       end
+      
+      def click_and_wait(locator, options={})
+        remote_control_command "clickAndWait", [locator,]
+      end
 
       # Verifies that the specified text pattern appears somewhere on the rendered page shown to the user.
       #
